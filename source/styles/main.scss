@@ -1,8 +1,4 @@
+@import 'reset';
+@import 'base.scss';
 @import 'media-queries';
 @import 'components/header/index.scss';
-
-
-*{
-    margin: 0;
-    padding: 0;
-}
