@@ -1,3 +1,221 @@
+
+$font-motserrat: 'Montserrat', sans-serif;
+
 .header {
-    background: yellow;
+    width: 100%;
+
+    .row-1 {
+        display: flex;
+        justify-content: center;
+        background-color: $bg-color-2;
+
+        .container {
+            display: flex;
+            width: 1200px;
+
+            .block {
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                width: 271px;
+                height: 423px;
+                margin-left: 72px;
+                background-color: $bg-color-1;
+
+                h3 {
+                    display: flex;
+                    margin-bottom: 48px;
+                    margin-left: -1px;
+                    color: $color-1;
+                    font-family: $font-motserrat;
+                    font-size: 13px;
+                    letter-spacing: 0.9px;
+                    font-weight: 900;
+
+                    &::before {
+                        content: 'E';
+                        display: inline-block;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 6px;
+                        height: 10px;
+                        margin-top: -5px;
+                        margin-right: 6px;
+                        margin-left: -1px;
+                        padding: 9px 11px;
+                        border: 3px solid $color-1;
+                        font-size: 23px;
+                    }
+                }
+
+                h6 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100px;
+                    height: 18px;
+                    margin-top: -1px;
+                    margin-bottom: 8px;
+                    margin-left: 4px;
+                    background-color: $bg-color-3;
+                    color: $color-1;
+                    font-family: $font-motserrat;
+                    font-size: 10px;
+                }
+
+                h4 {
+                    margin-top: -2px;
+                    margin-left: 7px;
+                    color: $color-1;
+                    font-family: $font-motserrat;
+                    font-size: 22px;
+                    line-height: 26px;
+                }
+
+                h2 {
+                    margin-top: -1px;
+                    margin-left: 8px;
+                    color: $color-1;
+                    font-family: $font-motserrat;
+                    font-size: 24px;
+                    line-height: 26px;
+                    letter-spacing: 0.9px;
+
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 90%;
+                        height: 1px;
+                        margin-top: 13px;
+                        margin-left: -3px;
+                        background: $bg-color-4;
+                    }
+                }
+
+                h5 {
+                    width: 220px;
+                    padding-top: 17px;
+                    margin-left: 4px;
+                    color: $color-1;
+                    font-family: 'Open sans';
+                    font-size: 16px;
+                    font-weight: 200;
+                    letter-spacing: -0.2px;
+                    word-spacing: 0.2px;
+                    line-height: 20px;
+
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 128%;
+                        height: 1px;
+                        margin-top: 20px;
+                        background: $bg-color-4;
+                    }
+                }
+
+                p {
+                    position: relative;
+                    margin-top: 19px;
+                    margin-left: 34px;                
+                    color: $color-1;
+                    font-family: $font-motserrat;
+                    font-size: 18px;
+                    line-height: 20px;
+
+                    &::before {
+                        content: url(/images/header/arrow.png);
+                        display: inline;
+                        position: absolute;
+                        top: 1px;
+                        left: -30px;
+                        width: 21px;
+                        height: 21px;
+                        padding-right: 10px;
+                    }
+                }
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 63px;
+                height: 58px;
+                transform: translate(-100%, 20px);
+                background-color: $bg-color-3;
+
+                img {
+                    width: 27.07px;
+                    height: 26.1px;
+                }
+            }
+
+            .icon {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                border-top: 1px solid $color-2;
+                border-bottom: 1px solid $color-2;
+                color: $color-1;
+                font-size: 18px;
+
+                i {
+                    padding: 10px;
+                    border-left: 1px solid $color-2;
+
+                    &:hover {
+                        color: #111111;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .row-2 {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        background-color: $bg-color-5;
+
+        .container {
+            display: flex;
+            position: relative;
+            justify-content: flex-end;
+            width: 1200px;
+            height: 65px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                z-index: 1;
+                left: 0;
+                width: 500%;
+                height: 100%;
+                background-color: $bg-color-3;
+            }
+
+            div {
+                z-index: 2;
+                border-right: 1px solid $color-3;
+                line-height: 65px;
+                display: none;
+
+                a {
+                    padding: 16px 18px;
+                    border-left: 1px solid $color-3;
+                    color: $color-1;
+                    font-size: 20px;
+                    font-size: 30px;
+
+                    &:hover {
+                        color: $color-2;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
 }
