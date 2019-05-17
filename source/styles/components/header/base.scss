@@ -1,17 +1,26 @@
 
 $font-motserrat: 'Montserrat', sans-serif;
+$font-opensans: 'Open sans';
 
 .header {
     width: 100%;
 
     .row-1 {
         display: flex;
+        position: relative;
+        align-items: center;
         justify-content: center;
+        overflow: hidden;
         background-color: $bg-color-2;
+
+        > img {
+            position: absolute;
+        }
 
         .container {
             display: flex;
-            width: 1200px;
+            position: relative;
+            width: 1003px;
 
             .block {
                 display: flex;
@@ -21,16 +30,18 @@ $font-motserrat: 'Montserrat', sans-serif;
                 height: 423px;
                 padding-top: 30px;
                 padding-left: 30px;
+                opacity: .9;
                 background-color: $bg-color-1;
 
                 h3 {
                     display: flex;
-                    margin-bottom: 48px;
+                    margin-top: 3px;
+                    margin-bottom: 51px;
                     margin-left: -1px;
                     color: $color-1;
                     font-family: $font-motserrat;
-                    font-size: 18px;
-                    font-weight: 900;
+                    font-size: 17px;
+                    font-weight: bold;
 
                     &::before {
                         content: 'E';
@@ -40,12 +51,12 @@ $font-motserrat: 'Montserrat', sans-serif;
                         justify-content: center;
                         width: 17px;
                         height: 20px;
-                        margin-top: -3px;
+                        margin-top: -6px;
                         margin-right: 9px;
                         margin-left: 3px;
                         padding: 9px 11px;
                         border: 3px solid $color-1;
-                        font-size: 30px;
+                        font-size: 31px;
                     }
                 }
 
@@ -55,13 +66,14 @@ $font-motserrat: 'Montserrat', sans-serif;
                     justify-content: center;
                     width: 100px;
                     height: 18px;
-                    margin-top: -1px;
+                    margin-top: -2px;
                     margin-bottom: 8px;
-                    margin-left: 4px;
+                    margin-left: 3px;
                     background-color: $bg-color-3;
                     color: $color-1;
                     font-family: $font-motserrat;
                     font-size: 10px;
+                    font-weight: 400;
                 }
 
                 h4 {
@@ -70,17 +82,18 @@ $font-motserrat: 'Montserrat', sans-serif;
                     color: $color-1;
                     font-family: $font-motserrat;
                     font-size: 22px;
+                    letter-spacing: -.9px;
                     line-height: 26px;
                 }
 
                 h2 {
                     margin-top: -1px;
-                    margin-left: 8px;
+                    margin-left: 6px;
                     color: $color-1;
                     font-family: $font-motserrat;
                     font-size: 24px;
+                    letter-spacing: .8px;
                     line-height: 26px;
-                    letter-spacing: 0.9px;
 
                     &::after {
                         content: '';
@@ -95,15 +108,15 @@ $font-motserrat: 'Montserrat', sans-serif;
 
                 h5 {
                     width: 220px;
-                    padding-top: 17px;
                     margin-left: 4px;
+                    padding-top: 17px;
                     color: $color-1;
-                    font-family: 'Open sans';
+                    font-family: 'Open sans', sans-serif;
                     font-size: 16px;
                     font-weight: 200;
-                    letter-spacing: -0.2px;
-                    word-spacing: 0.2px;
+                    letter-spacing: .4px;
                     line-height: 20px;
+                    word-spacing: -2px;
 
                     &::after {
                         content: '';
@@ -118,7 +131,7 @@ $font-motserrat: 'Montserrat', sans-serif;
                 p {
                     position: relative;
                     margin-top: 19px;
-                    margin-left: 34px;                
+                    margin-left: 32px;
                     color: $color-1;
                     font-family: $font-motserrat;
                     font-size: 18px;
@@ -128,7 +141,7 @@ $font-motserrat: 'Montserrat', sans-serif;
                         content: url(/images/header/arrow.png);
                         display: inline;
                         position: absolute;
-                        top: 1px;
+                        top: 0;
                         left: -30px;
                         width: 21px;
                         height: 21px;
@@ -142,30 +155,28 @@ $font-motserrat: 'Montserrat', sans-serif;
                 align-items: center;
                 justify-content: center;
                 width: 63px;
-                height: 58px;
+                height: 60px;
                 background-color: $bg-color-3;
 
                 img {
                     width: 27.07px;
-                    height: 26.1px;
+                    height: 27.1px;
                 }
             }
 
             .icon {
                 position: absolute;
-                right: 0;
-                bottom: 0;
-                color: $color-1;
+                right: 4px;
+                bottom: -3px;
+                border: 1px solid $color-2;
                 font-size: 18px;
 
                 img {
-                    
-                    
-                    
+                    padding: 10px;
+                    border-left: 1px solid $color-2;
 
-                    &:hover {
-                        color: #111111;
-                        cursor: pointer;
+                    &:first-child {
+                        border-left: none;  
                     }
                 }
             }
@@ -182,8 +193,9 @@ $font-motserrat: 'Montserrat', sans-serif;
             display: flex;
             position: relative;
             justify-content: flex-end;
-            width: 1200px;
-            height: 65px;
+            width: 1003px;
+            height: 63px;
+            margin-top: 1px;
 
             &::before {
                 content: '';
@@ -197,14 +209,15 @@ $font-motserrat: 'Montserrat', sans-serif;
 
             div {
                 z-index: 2;
+                margin-right: 3px;
                 border-right: 1px solid $color-3;
                 line-height: 65px;
 
                 a {
-                    padding: 16px 18px;
+                    margin-left: -4px;
+                    padding: 16px 21px;
                     border-left: 1px solid $color-3;
                     color: $color-1;
-                    font-size: 20px;
                     font-size: 30px;
 
                     &:hover {

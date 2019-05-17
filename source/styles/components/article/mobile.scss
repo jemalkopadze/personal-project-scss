@@ -1,0 +1,42 @@
+.row-3 {
+    background-color: $bg-color-7;
+
+    .container {
+        display: flex;
+        width: 271px;
+
+        .poster {
+            display: none;
+        }
+
+        .overview {
+
+            .news {
+                margin-left: 0;
+
+                h1 {
+                    text-align: center;
+                }
+
+                .title {
+                    text-align: center;
+                }
+
+                .text {
+                    align-self: center;
+                    column-count: 1;
+                    text-align: center;
+
+                    p {
+                        padding-bottom: 16px;
+                    }
+                }
+
+                .last {
+                    align-self: center;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
